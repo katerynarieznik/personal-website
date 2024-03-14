@@ -1,3 +1,4 @@
+import { ThemeProvider } from '@/components/theme-provider'
 import { fontSans, fontSerif } from '@/lib/fonts'
 import { cn } from '@/lib/utils'
 import '@/styles/globals.css'
@@ -22,7 +23,14 @@ export default function RootLayout({
           fontSerif.variable
         )}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )
