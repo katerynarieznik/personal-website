@@ -7,9 +7,9 @@ import {
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function Header() {
+export function Header() {
   return (
-    <header className="flex items-center justify-between px-4 py-12 md:px-12">
+    <header className="mx-auto flex max-w-screen-md items-center justify-between px-4 py-12 md:px-12">
       <div className="flex items-center gap-4">
         <Image
           src="/photo.avif"

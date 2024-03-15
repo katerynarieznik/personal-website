@@ -1,9 +1,9 @@
 import { ModeToggle } from '@/components/mode-toggle'
+import { Button } from '@/components/ui/button'
 import { UAHeartIcon } from '@/components/ui/icons'
 import Link from 'next/link'
-import { Button } from './ui/button'
 
-export default function Footer() {
+export function Footer() {
   return (
     <footer className="fixed bottom-0 w-full py-6">
       <div className="mx-auto flex max-w-screen-md justify-between px-4 md:px-12">
