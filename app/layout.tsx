@@ -1,3 +1,4 @@
+import Footer from '@/components/footer'
 import { ThemeProvider } from '@/components/theme-provider'
 import { fontSans, fontSerif } from '@/lib/fonts'
 import { cn } from '@/lib/utils'
@@ -30,6 +31,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
