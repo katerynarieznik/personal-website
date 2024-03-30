@@ -16,7 +16,9 @@ export function TechIcon({ icon, text }: TechIconProps) {
     <TooltipProvider delayDuration={0} skipDelayDuration={0}>
       <Tooltip>
         <TooltipTrigger asChild>
-          <Button size="icon">{icon}</Button>
+          <Button variant="secondary" size="icon">
+            {icon}
+          </Button>
         </TooltipTrigger>
         <TooltipContent
           side="bottom"
