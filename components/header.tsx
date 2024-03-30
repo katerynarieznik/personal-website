@@ -41,7 +41,7 @@ export function Header() {
             key={label}
             href={href}
             target="_blank"
-            className="relative after:absolute after:mt-1 after:hidden after:h-px after:w-full after:origin-[center_right] after:scale-x-0 after:bg-foreground after:transition-transform after:duration-500 after:hover:origin-[center_left] after:hover:scale-x-100 md:after:block"
+            className="relative rounded after:absolute after:mt-1 after:hidden after:h-px after:w-full after:origin-[center_right] after:scale-x-0 after:bg-foreground after:transition-transform after:duration-500 after:hover:origin-[center_left] after:hover:scale-x-100 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring md:after:block"
           >
             <Button variant="ghost" size="icon" className="md:hidden">
               {icon}
