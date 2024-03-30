@@ -10,7 +10,7 @@ interface ProjectListSectionProps {
 
 export function ProjectListSection({ cards }: ProjectListSectionProps) {
   return (
-    <section className="py-12">
+    <section className="py-24">
       <h1 className="font-serif font-medium opacity-50">
         Projects and smaller bits
       </h1>
@@ -18,7 +18,12 @@ export function ProjectListSection({ cards }: ProjectListSectionProps) {
         {cards.map((card) => {
           if (card.href) {
             return (
-              <Link href={card.href} key={card.title} target="_blank">
+              <Link
+                href={card.href}
+                key={card.title}
+                target="_blank"
+                className="group focus-visible:outline-none"
+              >
                 <ProjectCard
                   key={card.title}
                   title={card.title}

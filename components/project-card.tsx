@@ -12,7 +12,7 @@ export function ProjectCard({
   isExternal,
 }: ProjectCardProps) {
   return (
-    <article className="group -mx-5 flex items-center justify-between rounded-lg px-5 py-4 transition hover:bg-accent active:scale-[.98]">
+    <article className="-mx-5 flex items-center justify-between rounded-lg px-5 py-4 transition hover:bg-accent active:scale-[.99] group-focus-visible:ring-1 group-focus-visible:ring-ring">
       <div>
         <h2 className="pb-1.5 font-semibold">{title}</h2>
         <p className="opacity-40">{description}</p>
