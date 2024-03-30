@@ -1,11 +1,20 @@
 import { Button } from '@/components/ui/button'
-import {
-  EnvelopeClosedIcon,
-  GitHubLogoIcon,
-  LinkedInLogoIcon,
-} from '@radix-ui/react-icons'
+import { GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
 import Image from 'next/image'
 import Link from 'next/link'
+
+const CONTACTS = [
+  {
+    href: 'https://www.linkedin.com/in/katerynarieznik',
+    label: 'LinkedIn',
+    icon: <LinkedInLogoIcon className="size-5" />,
+  },
+  {
+    href: 'https://github.com/katerynarieznik',
+    label: 'GitHub',
+    icon: <GitHubLogoIcon className="size-5" />,
+  },
+]
 
 export function Header() {
   return (
@@ -25,49 +34,21 @@ export function Header() {
           </h2>
         </div>
       </div>
-      <div className="hidden md:block">
-        <Button variant="link" asChild>
-          <Link
-            href="https://www.linkedin.com/in/katerynarieznik/"
-            target="_blank"
-          >
-            LinkedIn
-          </Link>
-        </Button>
-        <Button variant="link" asChild>
-          <Link href="https://github.com/katerynarieznik" target="_blank">
-            GitHub
-          </Link>
-        </Button>
-        <Button variant="link" asChild>
-          <Link href="mailto:rieznik.k@gmail.com" target="_blank">
-            Contact
-          </Link>
-        </Button>
-      </div>
 
-      <div className="flex items-center gap-3 md:hidden">
-        <Button variant="outline" size="icon" asChild>
+      <div className="flex items-center gap-3">
+        {CONTACTS.map(({ href, label, icon }) => (
           <Link
-            href="https://www.linkedin.com/in/katerynarieznik/"
+            key={label}
+            href={href}
             target="_blank"
+            className="relative after:absolute after:mt-1 after:hidden after:h-px after:w-full after:origin-[center_right] after:scale-x-0 after:bg-foreground after:transition-transform after:duration-500 after:hover:origin-[center_left] after:hover:scale-x-100 md:after:block"
           >
-            <LinkedInLogoIcon className="size-4" />
-            <span className="sr-only">LinkedIn</span>
+            <Button variant="ghost" size="icon" className="md:hidden">
+              {icon}
+            </Button>
+            <span className="sr-only md:not-sr-only">{label}</span>
           </Link>
-        </Button>
-        <Button variant="outline" size="icon" asChild>
-          <Link href="https://github.com/katerynarieznik" target="_blank">
-            <GitHubLogoIcon className="size-4" />
-            <span className="sr-only">GitHub</span>
-          </Link>
-        </Button>
-        <Button variant="outline" size="icon" asChild>
-          <Link href="mailto:rieznik.k@gmail.com" target="_blank">
-            <EnvelopeClosedIcon className="size-4" />
-            <span className="sr-only">Contact</span>
-          </Link>
-        </Button>
+        ))}
       </div>
     </header>
   )
