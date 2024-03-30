@@ -1,0 +1,25 @@
+import { ExternalLinkIcon } from '@radix-ui/react-icons'
+
+interface ProjectCardProps {
+  title: string
+  description: string
+  isExternal?: boolean
+}
+
+export function ProjectCard({
+  title,
+  description,
+  isExternal,
+}: ProjectCardProps) {
+  return (
+    <article className="group -mx-5 flex items-center justify-between rounded-lg px-5 py-4 transition hover:bg-accent active:scale-[.98]">
+      <div>
+        <h2 className="pb-1.5 font-semibold">{title}</h2>
+        <p className="opacity-40">{description}</p>
+      </div>
+      {isExternal && (
+        <ExternalLinkIcon className="text-transparent transition-colors group-hover:text-foreground" />
+      )}
+    </article>
+  )
+}

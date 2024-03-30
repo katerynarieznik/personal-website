@@ -10,8 +10,8 @@ export function About() {
   return (
     <section>
       <p className="max-w-md py-12">
-        Aspiring and quality-conscious frontend developer with experience in
-        Project Management and Quality Assurance.
+        Aspiring quality-conscious frontend developer with particular interest
+        in animations.
       </p>
       <div className="flex gap-4">
         <TechIcon icon={<ReactSimpleIcon />} text="React" />
