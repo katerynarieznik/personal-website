@@ -10,8 +10,8 @@ export function About() {
   return (
     <section>
       <p className="max-w-md pb-8 pt-12">
-        Aspiring quality-conscious frontend developer with particular interest
-        in animations.
+        Aspiring quality-conscious front-end developer with a particular
+        interest in animations.
       </p>
       <div className="flex gap-4">
         <TechIcon icon={<ReactSimpleIcon className="size-5" />} text="React" />
