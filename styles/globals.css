@@ -1,11 +1,18 @@
+@import '@radix-ui/colors/gray.css';
+@import '@radix-ui/colors/gray-dark.css';
+@import '@radix-ui/colors/jade.css';
+@import '@radix-ui/colors/jade-dark.css';
+@import '@radix-ui/colors/sage.css';
+@import '@radix-ui/colors/sage-dark.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 0%;
+    --background: var(--gray-2);
+    --foreground: var(--gray-12);
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -13,17 +20,17 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 175 35% 78%;
-    --primary-foreground: 0 0% 0%;
+    --primary: var(--jade-4);
+    --primary-foreground: var(--jade-11);
 
-    --secondary: 173 47% 93%;
-    --secondary-foreground: 177 32% 35%;
+    --secondary: var(--jade-4);
+    --secondary-foreground: var(--jade-12);
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 0 0% 89%;
-    --accent-foreground: 0 0% 0%;
+    --accent: var(--sage-4);
+    --accent-foreground: var(--sage-12);
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -35,8 +42,8 @@
     --radius: 0.5rem;
   }
 
-  .dark {
-    --background: 0 0% 0%;
+  /* .dark {
+    --background: var(--gray-3);
     --foreground: 0 0% 100%;
 
     --card: 222.2 84% 4.9%;
@@ -63,7 +70,7 @@
     --border: 0 0% 28%;
     --input: 0 0% 28%;
     --ring: 176 30% 31%;
-  }
+  } */
 }
 
 @layer base {
