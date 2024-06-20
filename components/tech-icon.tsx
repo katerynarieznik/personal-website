@@ -21,7 +21,7 @@ export function TechIcon({ icon, text }: TechIconProps) {
           </Button>
         </TooltipTrigger>
         <TooltipContent
-          side="bottom"
+          side="top"
           align="center"
           className="bg-transparent p-0 text-foreground"
         >
