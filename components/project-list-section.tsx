@@ -10,8 +10,8 @@ interface ProjectListSectionProps {
 
 export function ProjectListSection({ cards }: ProjectListSectionProps) {
   return (
-    <section className="py-24">
-      <h1 className="font-serif font-medium opacity-50">Projects</h1>
+    <section>
+      <h1 className="text-xl font-medium opacity-60">Projects</h1>
       <div className="py-3">
         {cards.map((card) => (
           <Link

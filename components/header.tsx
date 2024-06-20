@@ -19,21 +19,21 @@ const CONTACTS = [
 export function Header() {
   return (
     <header className="mx-auto flex max-w-screen-md items-center justify-between px-4 py-12 md:px-12">
-      <div className="flex items-center gap-4">
+      <Link href="/" className="flex items-center gap-4">
         <Image
           src="/photo.avif"
           alt="Kateryna Rieznik"
-          width={48}
-          height={48}
+          width={52}
+          height={52}
           className="rounded-full"
         />
         <div className="flex flex-col">
-          <h1 className="font-serif font-semibold">Kateryna Rieznik</h1>
-          <h2 className="font-sans font-normal opacity-50">
+          <h1 className="font-serif text-xl font-semibold">Kateryna Rieznik</h1>
+          <h2 className="font-sans text-xl font-extralight opacity-60">
             Front-end developer
           </h2>
         </div>
-      </div>
+      </Link>
 
       <div className="flex items-center gap-3">
         {CONTACTS.map(({ href, label, icon }) => (

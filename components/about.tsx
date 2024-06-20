@@ -8,12 +8,8 @@ import {
 
 export function About() {
   return (
-    <section>
-      <p className="max-w-md pb-8 pt-12">
-        Aspiring quality-conscious front-end developer with a particular
-        interest in animations.
-      </p>
-      <div className="flex gap-4">
+    <section className="text-lg">
+      <div className="flex gap-4 pb-12">
         <TechIcon icon={<ReactSimpleIcon className="size-5" />} text="React" />
         <TechIcon
           icon={<NextJsSimpleIcon className="size-5" />}
@@ -28,6 +24,28 @@ export function About() {
           text="React Query"
         />
       </div>
+      <p className="max-w-xxl py-2">
+        Fun fact: I have a master&apos;s degree in astrophysics! Now I&apos;m a
+        front-end developer passionate about building beautiful websites.
+      </p>
+      <p className="max-w-xxl pb-12 pt-2">
+        My non-linear journey to this career makes it all the more rewarding and
+        exciting. I thrive in small teams where I can contribute my ideas and
+        drive initiatives to make a meaningful impact.
+      </p>
+      {/* <p className="max-w-xxl py-2">
+        My first commercial experience as a developer was with a startup, where
+        I built the initial web app as the sole front-end developer.
+      </p>
+      <p className="max-w-xxl py-2">
+        Before that, I wore the hats of QA Engineer and Technical PM. I&apos;m
+        proud to have been welcomed into the same community twice and to see my
+        previous work successfully helping catch bugs early in the process.
+      </p>
+      <p className="max-w-xxl pb-12 pt-2">
+        I&apos;m eager to bring my expertise to innovative projects. Let&apos;s
+        connect and explore how my skills can elevate your team&apos;s success!
+      </p> */}
     </section>
   )
 }

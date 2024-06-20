@@ -13,6 +13,9 @@ export function Footer() {
             <span className="sr-only">Help Ukraine</span>
           </Link>
         </Button>
+        <Button variant="link" className="text-foreground" asChild>
+          <Link href="/attributions">Attributions</Link>
+        </Button>
         <ModeToggle />
       </div>
     </footer>
