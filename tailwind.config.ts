@@ -1,3 +1,4 @@
+import { amber, blue, jade, lime, pink, purple, yellow } from '@radix-ui/colors'
 import type { Config } from 'tailwindcss'
 const { fontFamily } = require('tailwindcss/defaultTheme')
 
@@ -17,6 +18,12 @@ const config = {
       screens: {
         '2xl': '1400px',
       },
+    },
+    backgroundSize: {
+      auto: 'auto',
+      cover: 'cover',
+      contain: 'contain',
+      '400%': '400% 100%',
     },
     extend: {
       fontFamily: {
@@ -57,6 +64,37 @@ const config = {
           DEFAULT: 'var(--card)',
           foreground: 'var(--card-foreground)',
         },
+        jade: {
+          9: jade.jade9,
+          11: jade.jade11,
+        },
+        lime: {
+          9: lime.lime9,
+          11: lime.lime11,
+        },
+        pink: {
+          9: pink.pink9,
+          11: pink.pink11,
+        },
+        yellow: {
+          9: yellow.yellow9,
+          11: yellow.yellow11,
+        },
+        amber: {
+          9: amber.amber9,
+          11: amber.amber11,
+        },
+        blue: {
+          9: blue.blue9,
+          11: blue.blue11,
+        },
+        purple: {
+          9: purple.purple9,
+          11: purple.purple11,
+        },
+      },
+      backgroundImage: {
+        colorful: `linear-gradient(to right, ${pink.pink9}, ${yellow.yellow10}, ${lime.lime10}, ${jade.jade9}, ${blue.blue9}, ${purple.purple9}, ${pink.pink9})`,
       },
       borderRadius: {
         lg: 'var(--radius)',
@@ -72,10 +110,16 @@ const config = {
           from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: '0' },
         },
+        'move-bg': {
+          to: {
+            'background-position': '400% 0',
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        'move-bg': 'move-bg 32s linear infinite',
       },
     },
   },
