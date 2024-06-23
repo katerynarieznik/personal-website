@@ -1,4 +1,3 @@
-import { amber, blue, jade, lime, pink, purple, yellow } from '@radix-ui/colors'
 import type { Config } from 'tailwindcss'
 const { fontFamily } = require('tailwindcss/defaultTheme')
 
@@ -25,76 +24,31 @@ const config = {
       contain: 'contain',
       '400%': '400% 100%',
     },
+    colors: {
+      transparent: 'transparent',
+      gray: {
+        20: 'var(--gray-2)',
+        60: 'var(--gray-6)',
+        120: 'var(--gray-12)',
+      },
+      sage: {
+        40: 'var(--sage-4)',
+        120: 'var(--sage-12)',
+      },
+      jade: {
+        40: 'var(--jade-4)',
+        90: 'var(--jade-9)',
+        110: 'var(--jade-11)',
+        120: 'var(--jade-12)',
+      },
+    },
     extend: {
       fontFamily: {
         sans: ['var(--font-sans)', ...fontFamily.sans],
         serif: ['var(--font-serif)', ...fontFamily.serif],
       },
-      colors: {
-        border: 'var(--border)',
-        input: 'var(--input)',
-        ring: 'var(--ring)',
-        background: 'var(--background)',
-        foreground: 'var(--foreground)',
-        primary: {
-          DEFAULT: 'var(--primary)',
-          foreground: 'var(--primary-foreground)',
-        },
-        secondary: {
-          DEFAULT: 'var(--secondary)',
-          foreground: 'var(--secondary-foreground)',
-        },
-        destructive: {
-          DEFAULT: 'var(--destructive)',
-          foreground: 'var(--destructive-foreground)',
-        },
-        muted: {
-          DEFAULT: 'var(--muted)',
-          foreground: 'var(--muted-foreground)',
-        },
-        accent: {
-          DEFAULT: 'var(--accent)',
-          foreground: 'var(--accent-foreground)',
-        },
-        popover: {
-          DEFAULT: 'var(--popover)',
-          foreground: 'var(--popover-foreground)',
-        },
-        card: {
-          DEFAULT: 'var(--card)',
-          foreground: 'var(--card-foreground)',
-        },
-        jade: {
-          9: jade.jade9,
-          11: jade.jade11,
-        },
-        lime: {
-          9: lime.lime9,
-          11: lime.lime11,
-        },
-        pink: {
-          9: pink.pink9,
-          11: pink.pink11,
-        },
-        yellow: {
-          9: yellow.yellow9,
-          11: yellow.yellow11,
-        },
-        amber: {
-          9: amber.amber9,
-          11: amber.amber11,
-        },
-        blue: {
-          9: blue.blue9,
-          11: blue.blue11,
-        },
-        purple: {
-          9: purple.purple9,
-          11: purple.purple11,
-        },
-      },
       backgroundImage: {
-        colorful: `linear-gradient(to right, ${pink.pink9}, ${yellow.yellow10}, ${lime.lime10}, ${jade.jade9}, ${blue.blue9}, ${purple.purple9}, ${pink.pink9})`,
+        colorful: `linear-gradient(to right, var(--pink-9), var(--yellow-10), var(--lime-10), var(--jade-9), var(--blue-9), var(--purple-9), var(--pink-9))`,
       },
       borderRadius: {
         lg: 'var(--radius)',
