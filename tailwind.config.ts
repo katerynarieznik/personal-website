@@ -18,45 +18,37 @@ const config = {
         '2xl': '1400px',
       },
     },
+    backgroundSize: {
+      auto: 'auto',
+      cover: 'cover',
+      contain: 'contain',
+      '400%': '400% 100%',
+    },
+    colors: {
+      transparent: 'transparent',
+      gray: {
+        20: 'var(--gray-2)',
+        60: 'var(--gray-6)',
+        120: 'var(--gray-12)',
+      },
+      sage: {
+        40: 'var(--sage-4)',
+        120: 'var(--sage-12)',
+      },
+      jade: {
+        40: 'var(--jade-4)',
+        90: 'var(--jade-9)',
+        110: 'var(--jade-11)',
+        120: 'var(--jade-12)',
+      },
+    },
     extend: {
       fontFamily: {
         sans: ['var(--font-sans)', ...fontFamily.sans],
         serif: ['var(--font-serif)', ...fontFamily.serif],
       },
-      colors: {
-        border: 'var(--border)',
-        input: 'var(--input)',
-        ring: 'var(--ring)',
-        background: 'var(--background)',
-        foreground: 'var(--foreground)',
-        primary: {
-          DEFAULT: 'var(--primary)',
-          foreground: 'var(--primary-foreground)',
-        },
-        secondary: {
-          DEFAULT: 'var(--secondary)',
-          foreground: 'var(--secondary-foreground)',
-        },
-        destructive: {
-          DEFAULT: 'var(--destructive)',
-          foreground: 'var(--destructive-foreground)',
-        },
-        muted: {
-          DEFAULT: 'var(--muted)',
-          foreground: 'var(--muted-foreground)',
-        },
-        accent: {
-          DEFAULT: 'var(--accent)',
-          foreground: 'var(--accent-foreground)',
-        },
-        popover: {
-          DEFAULT: 'var(--popover)',
-          foreground: 'var(--popover-foreground)',
-        },
-        card: {
-          DEFAULT: 'var(--card)',
-          foreground: 'var(--card-foreground)',
-        },
+      backgroundImage: {
+        colorful: `linear-gradient(to right, var(--pink-9), var(--yellow-10), var(--lime-10), var(--jade-9), var(--blue-9), var(--purple-9), var(--pink-9))`,
       },
       borderRadius: {
         lg: 'var(--radius)',
@@ -72,10 +64,16 @@ const config = {
           from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: '0' },
         },
+        'move-bg': {
+          to: {
+            'background-position': '400% 0',
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        'move-bg': 'move-bg 32s linear infinite',
       },
     },
   },

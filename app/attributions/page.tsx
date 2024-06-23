@@ -16,7 +16,7 @@ export default function AttributionsPage() {
           Andriy Konstantynov,{' '}
           <Link
             href="https://minttype.com"
-            className="font-medium text-accent-foreground underline underline-offset-4 hover:text-primary-foreground"
+            className="font-medium text-sage-120 underline underline-offset-4 hover:text-jade-110"
           >
             minttype.com
           </Link>
@@ -27,7 +27,7 @@ export default function AttributionsPage() {
           designed by Ivan Tsanko-Khlybovich,{' '}
           <Link
             href="https://www.tsankotype.com/копия-zvin-serif"
-            className="font-medium text-accent-foreground underline underline-offset-4 hover:text-primary-foreground"
+            className="font-medium text-sage-120 underline underline-offset-4 hover:text-jade-110"
           >
             tsankotype.com
           </Link>
@@ -41,14 +41,14 @@ export default function AttributionsPage() {
           The icons used in this website are from the{' '}
           <Link
             href="https://www.radix-ui.com/icons"
-            className="font-medium text-accent-foreground underline underline-offset-4 hover:text-primary-foreground"
+            className="font-medium text-sage-120 underline underline-offset-4 hover:text-jade-110"
           >
             Radix UI
           </Link>{' '}
           and{' '}
           <Link
             href="https://simpleicons.org/"
-            className="font-medium text-accent-foreground underline underline-offset-4 hover:text-primary-foreground"
+            className="font-medium text-sage-120 underline underline-offset-4 hover:text-jade-110"
           >
             SimpleIcons
           </Link>{' '}

@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export function Footer() {
   return (
-    <footer className="fixed bottom-0 w-full bg-gradient-to-t from-background from-60% py-6">
+    <footer className="fixed bottom-0 w-full bg-gradient-to-t from-gray-20 from-60% py-6">
       <div className="mx-auto flex max-w-screen-md justify-between px-4 md:px-12">
         <Button variant="ghost" size="icon" asChild>
           <Link href="https://savelife.in.ua/en/" target="_blank">
@@ -13,7 +13,7 @@ export function Footer() {
             <span className="sr-only">Help Ukraine</span>
           </Link>
         </Button>
-        <Button variant="link" className="text-foreground" asChild>
+        <Button variant="link" className="text-gray-120" asChild>
           <Link href="/attributions">Attributions</Link>
         </Button>
         <ModeToggle />
