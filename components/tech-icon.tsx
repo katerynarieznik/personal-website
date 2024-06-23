@@ -23,7 +23,7 @@ export function TechIcon({ icon, text }: TechIconProps) {
         <TooltipContent
           side="top"
           align="center"
-          className="bg-transparent p-0 text-foreground"
+          className="bg-transparent p-0 text-gray-120"
         >
           <p>{text}</p>
         </TooltipContent>

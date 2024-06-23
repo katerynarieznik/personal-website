@@ -29,7 +29,7 @@ export function Header() {
         />
         <div className="flex flex-col">
           <h1 className="font-serif text-xl font-semibold">Kateryna Rieznik</h1>
-          <h2 className="font-sans text-xl font-extralight opacity-60">
+          <h2 className="font-sans text-lg font-extralight opacity-60 md:text-xl">
             Front-end developer
           </h2>
         </div>
@@ -41,7 +41,7 @@ export function Header() {
             key={label}
             href={href}
             target="_blank"
-            className="after:bg-gray-120 relative rounded after:absolute after:mt-1 after:hidden after:h-px after:w-full after:origin-[center_right] after:scale-x-0 after:transition-transform after:duration-500 after:hover:origin-[center_left] after:hover:scale-x-100 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring md:after:block"
+            className="focus-visible:ring-ring relative rounded after:absolute after:mt-1 after:hidden after:h-px after:w-full after:origin-[center_right] after:scale-x-0 after:bg-gray-120 after:transition-transform after:duration-500 after:hover:origin-[center_left] after:hover:scale-x-100 focus-visible:outline-none focus-visible:ring-1 md:after:block"
           >
             <Button variant="ghost" size="icon" className="md:hidden">
               {icon}

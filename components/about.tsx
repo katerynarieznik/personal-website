@@ -29,11 +29,11 @@ export function About() {
         front-end developer passionate about building
         <span className="relative inline-block w-28 text-2xl font-black text-transparent">
           beautiful
-          <span className="bg-400% bg-colorful absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 animate-move-bg bg-clip-text bg-left-top text-2xl font-black  text-transparent">
+          <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 animate-move-bg bg-colorful bg-400% bg-clip-text bg-left-top text-2xl font-black text-transparent">
             beautiful
           </span>
           <span className="absolute left-0 top-0 h-full w-full bg-transparent backdrop-blur-[2px]"></span>
-          <span className="bg-400% bg-colorful absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 animate-move-bg bg-clip-text bg-left-top text-2xl font-black  text-transparent">
+          <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 animate-move-bg bg-colorful bg-400% bg-clip-text bg-left-top text-2xl font-black text-transparent">
             beautiful
           </span>
         </span>
