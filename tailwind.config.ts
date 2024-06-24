@@ -22,7 +22,7 @@ const config = {
       auto: 'auto',
       cover: 'cover',
       contain: 'contain',
-      '400%': '400% 100%',
+      '200%': '200% 100%',
     },
     colors: {
       transparent: 'transparent',
@@ -66,14 +66,14 @@ const config = {
         },
         'move-bg': {
           to: {
-            'background-position': '400% 0',
+            'background-position': '200% 0',
           },
         },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        'move-bg': 'move-bg 32s linear infinite',
+        'move-bg': 'move-bg 3s linear infinite',
       },
     },
   },
