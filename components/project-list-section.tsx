@@ -1,11 +1,9 @@
 import { ProjectCard } from '@/components/project-card'
+import { IProject } from '@/types/types'
 import Link from 'next/link'
+
 interface ProjectListSectionProps {
-  cards: {
-    title: string
-    description: string
-    href?: string
-  }[]
+  cards: IProject[]
 }
 
 export function ProjectListSection({ cards }: ProjectListSectionProps) {
@@ -24,7 +22,7 @@ export function ProjectListSection({ cards }: ProjectListSectionProps) {
               key={card.title}
               title={card.title}
               description={card.description}
-              isExternal={card.href ? true : false}
+              type={card.type}
             />
           </Link>
         ))}

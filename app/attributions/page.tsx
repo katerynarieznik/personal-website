@@ -8,7 +8,7 @@ export default function AttributionsPage() {
           This website was built using Next.js, React and TailwindCSS
         </p>
 
-        <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
+        <h3 className="mt-8 scroll-m-20 font-serif text-2xl font-semibold tracking-tight">
           Fonts
         </h3>
         <p className="leading-7 [&:not(:first-child)]:mt-6">
@@ -34,7 +34,7 @@ export default function AttributionsPage() {
           .
         </p>
 
-        <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
+        <h3 className="mt-8 scroll-m-20 font-serif text-2xl font-semibold tracking-tight">
           Icons
         </h3>
         <p className="leading-7 [&:not(:first-child)]:mt-6">

@@ -33,6 +33,7 @@ const config = {
       },
       sage: {
         40: 'var(--sage-4)',
+        100: 'var(--sage-10)',
         120: 'var(--sage-12)',
       },
       jade: {
