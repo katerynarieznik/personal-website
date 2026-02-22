@@ -1,14 +1,14 @@
-import { Button } from '@/components/ui/button'
+import { Button } from "@/components/ui/button";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from '@/components/ui/tooltip'
+} from "@/components/ui/tooltip";
 
 interface TechIconProps {
-  icon: JSX.Element
-  text: string
+  icon: JSX.Element;
+  text: string;
 }
 
 export function TechIcon({ icon, text }: TechIconProps) {
@@ -29,5 +29,5 @@ export function TechIcon({ icon, text }: TechIconProps) {
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
-  )
+  );
 }

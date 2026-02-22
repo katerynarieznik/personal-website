@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 export default function AttributionsPage() {
   return (
@@ -8,12 +8,12 @@ export default function AttributionsPage() {
           This website was built using Next.js, React and TailwindCSS
         </p>
 
-        <h3 className="mt-8 scroll-m-20 font-serif text-2xl font-semibold tracking-tight">
+        <h3 className="mt-8 scroll-m-20 font-semibold font-serif text-2xl tracking-tight">
           Fonts
         </h3>
         <p className="leading-7 [&:not(:first-child)]:mt-6">
           The sans font used in this website is Road UA, a typeface designed by
-          Andriy Konstantynov,{' '}
+          Andriy Konstantynov,{" "}
           <Link
             href="https://minttype.com"
             className="font-medium text-sage-120 underline underline-offset-4 hover:text-jade-110"
@@ -24,7 +24,7 @@ export default function AttributionsPage() {
         </p>
         <p className="font-serif leading-7 [&:not(:first-child)]:mt-6">
           The serif font used in this website is Craftwork Grotesk, a typeface
-          designed by Ivan Tsanko-Khlybovich,{' '}
+          designed by Ivan Tsanko-Khlybovich,{" "}
           <Link
             href="https://www.tsankotype.com/копия-zvin-serif"
             className="font-medium text-sage-120 underline underline-offset-4 hover:text-jade-110"
@@ -34,27 +34,27 @@ export default function AttributionsPage() {
           .
         </p>
 
-        <h3 className="mt-8 scroll-m-20 font-serif text-2xl font-semibold tracking-tight">
+        <h3 className="mt-8 scroll-m-20 font-semibold font-serif text-2xl tracking-tight">
           Icons
         </h3>
         <p className="leading-7 [&:not(:first-child)]:mt-6">
-          The icons used in this website are from the{' '}
+          The icons used in this website are from the{" "}
           <Link
             href="https://www.radix-ui.com/icons"
             className="font-medium text-sage-120 underline underline-offset-4 hover:text-jade-110"
           >
             Radix UI
-          </Link>{' '}
-          and{' '}
+          </Link>{" "}
+          and{" "}
           <Link
             href="https://simpleicons.org/"
             className="font-medium text-sage-120 underline underline-offset-4 hover:text-jade-110"
           >
             SimpleIcons
-          </Link>{' '}
+          </Link>{" "}
           libraries.
         </p>
       </section>
     </main>
-  )
+  );
 }

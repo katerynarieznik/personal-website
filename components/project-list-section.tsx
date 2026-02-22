@@ -1,19 +1,19 @@
-import { ProjectCard } from '@/components/project-card'
-import { IProject } from '@/types/types'
-import Link from 'next/link'
+import Link from "next/link";
+import { ProjectCard } from "@/components/project-card";
+import type { IProject } from "@/types/types";
 
 interface ProjectListSectionProps {
-  cards: IProject[]
+  cards: IProject[];
 }
 
 export function ProjectListSection({ cards }: ProjectListSectionProps) {
   return (
     <section>
-      <h1 className="text-xl font-medium opacity-60">Currently Working On</h1>
+      <h1 className="font-medium text-xl opacity-60">Currently Working On</h1>
       <div className="py-3">
         {cards.map((card) => (
           <Link
-            href={card.href || '#'}
+            href={card.href || "#"}
             key={card.title}
             target="_blank"
             className="group focus-visible:outline-none"
@@ -28,5 +28,5 @@ export function ProjectListSection({ cards }: ProjectListSectionProps) {
         ))}
       </div>
     </section>
-  )
+  );
 }
