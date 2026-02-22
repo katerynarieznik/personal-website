@@ -16,14 +16,14 @@ export function TechIcon({ icon, text }: TechIconProps) {
     <TooltipProvider delayDuration={0} skipDelayDuration={0}>
       <Tooltip>
         <TooltipTrigger asChild>
-          <Button variant="secondary" size="icon">
+          <Button variant="secondary" size="icon" className="size-16">
             {icon}
           </Button>
         </TooltipTrigger>
         <TooltipContent
           side="top"
           align="center"
-          className="bg-transparent p-0 text-gray-120"
+          className="bg-transparent p-0 text-base text-gray-120"
         >
           <p>{text}</p>
         </TooltipContent>

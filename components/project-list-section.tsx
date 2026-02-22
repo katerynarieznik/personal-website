@@ -9,7 +9,7 @@ interface ProjectListSectionProps {
 export function ProjectListSection({ cards }: ProjectListSectionProps) {
   return (
     <section>
-      <h1 className="text-xl font-medium opacity-60">Projects</h1>
+      <h1 className="text-xl font-medium opacity-60">Currently Working On</h1>
       <div className="py-3">
         {cards.map((card) => (
           <Link
